@@ -37,7 +37,7 @@ with open(path, "r") as read:
 
         if not flagFound:
             print("Task on pythoshka not found")
-            exit(1)
+            continue
 
         page = requests.get(url)
 
