@@ -4,3 +4,34 @@
 Начало работы:
 
 ```
+git clone https://github.com/theVmagnificient/pythoshka_parser.git
+cd pythoshka_parser
+pip3 install -r requirements.txt
+```
+
+Далее создаем пустой файл, в который через строку копируем начало условий заданий с курсеры, пример в tasks.txt
+
+*КАЖДОЕ ЗАДАНИЕ НАЧИНАЕТСЯ СТРОГО С НОВОЙ СТРОКИ И УСЛОВИЕ ВВОДИТСЯ БЕЗ ПЕРЕНОСА СТРОКИ*
+
+Запуск скрипта
+
+```
+python3 parser.py path/to/tasks_file
+```
+
+В моем случае:
+
+```
+python3 parser.py tasks.txt
+```
+
+Файлы появятся с именами 
+
+```
+out_0.py
+out_1.py
+...
+out_n.py
+```
+
+Номера соответсвуют строкам с заданиями.
